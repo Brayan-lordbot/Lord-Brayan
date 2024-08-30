@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "",
-    "password": "",
+    "email": "hallehene@gmail.com",
+    "password": "Drillnova",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -17,18 +17,18 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100090405019929"],
+    "61559153223259"],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "OWNER": "ʬʆʬ Sønïč Shïsûį ʬɸʬ",
+  "OWNER": "🍁🌹 Lõrd Bråÿāñ 🌹🍁 ",
   "AGE": "16",
   "GENDER": "MALE",
-  "nickNameBot": "ミ★𝐒𝐎𝐍𝐈𝐂✄𝐄𝐗𝐄★彡",
-  "FACEBOOK": "https://www.facebook.com/profile.php?id=100090405019929",
-  "prefix": "!",
+  "nickNameBot": "༻𝑳𝒖𝒄𝒚.𝑯 𝑺𝒉𝒂𝒅𝒐𝒘༺",
+  "FACEBOOK": "https://www.facebook.com/profile.php?id=61559153223259",
+  "prefix": "§",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
