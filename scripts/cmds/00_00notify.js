@@ -4,7 +4,7 @@ const axios = require("axios");
 module.exports = {
 	config: {
 		name: "notify",
-		aliases: [],
+		aliases: "noti", 
 		version: "1.0",
 		author: "Kshitiz",
 		countDown: 5,
