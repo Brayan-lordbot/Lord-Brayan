@@ -1,6 +1,7 @@
 module.exports = {
 		config: {
-				name: "gen",
+				name: "generate",
+			        alias:"gen",
 				version: "1.0.0",
 				role: 0,
 				author: "deku",
@@ -18,8 +19,8 @@ module.exports = {
 				const { Prodia } = require("prodia.js");
 
 				let t = args.join(" ");
-				if (!t) return api.sendMessage('Missing prompt!', event.threadID, event.messageID);
-				api.sendMessage('Processing request...', event.threadID, event.messageID);
+				if (!t) return api.sendMessage('𝐏𝐫𝐨𝐦𝐩𝐭 𝐦𝐢𝐬𝐬𝐢𝐧𝐠, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫 𝐨𝐧𝐞!', event.threadID, event.messageID);
+				api.sendMessage('𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐟𝐨𝐫 𝐬𝐨𝐦𝐞 𝐭𝐢𝐦𝐞, 𝐲𝐨𝐮𝐫 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐢𝐬 𝐛𝐞𝐢𝐧𝐠 𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝', event.threadID, event.messageID);
 
 				try {
 						const prodia = new Prodia("70b8b086-24d8-4b14-b870-39efe453e5d3");
@@ -59,9 +60,9 @@ module.exports = {
 						}
 
 						console.log('Downloaded');
-						return api.sendMessage({ body: "Here's the results", attachment: image }, event.threadID, event.messageID);
+						return api.sendMessage({ body: "𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐞𝐬𝐮𝐥𝐭, 𝐡𝐨𝐩𝐞 𝐲𝐨𝐮𝐫 𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐨𝐫𝐲", attachment: image }, event.threadID, event.messageID);
 				} catch (e) {
-						console.error("Error generating image:", e.message);
+						console.error("𝐒𝐨𝐫𝐫𝐲 𝐛𝐮𝐭 𝐭𝐡𝐞𝐫𝐞 𝐰𝐚𝐬 𝐚𝐧 𝐞𝐫𝐫𝐨𝐫 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐢𝐦𝐚𝐠𝐞 😥:", e.message);
 						return api.sendMessage(e.message, event.threadID, event.messageID);
 				}
 		}
