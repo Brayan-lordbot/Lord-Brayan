@@ -6,6 +6,7 @@ const axios = require('axios');
 module.exports = {
   config: {
     name: "replitstalk",
+    alias: " repstak", 
     version: "1.0",
     author: "Eugene Aguilar",
     countDown: 5,
@@ -22,10 +23,10 @@ module.exports = {
       const username = args.join(" ");
 
       if (!username) {
-        return api.sendMessage(`Please provide a username.`, event.threadID, event.messageID);
+        return api.sendMessage(`𝐩𝐥𝐞𝐚𝐬𝐞 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐮𝐬𝐞𝐫 𝐧𝐚𝐦𝐞.`, event.threadID, event.messageID);
       }
 
-      api.sendMessage(`Processing, please wait...`, event.threadID, event.messageID);
+      api.sendMessage(`𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭, 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐢𝐬 𝐛𝐞𝐢𝐧𝐠 𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝...`, event.threadID, event.messageID);
 
       const response = await axios.get(`https://hoanghao.me/api/replitinfo?username=${username}`);
       const title = response.data.title;
